@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>FashionFlow</title>
+  <link rel="stylesheet" href="login.css">
+  <style>
+    /* Estilo para el contenedor de login */
+    .login {
+      text-align: center; 
+    }
+    .login form {
+      margin-bottom: 20px;
+    }
+    .login .back-link {
+      text-decoration: underline;
+      color: black;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .login .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function redirectToOtroArchivo() {
+      window.location.href = 'index.php';
+    }
+  </script>
+</head>
+<body>
+
+  <h1>Login</h1>
+
+  <div class="body"></div>
+  <div class="grad"></div>
+  <div class="header">
+    <div>Iniciar<span> sesión</span></div>
+  </div>
+  <br>
+  <div class="login">
+    <form action="login.php" method="post">
+      <input type="text" placeholder="username" name="user"><br>
+      <input type="password" placeholder="password" name="password"><br>
+      <input type="submit" value="Login">
+    </form>
+    <!-- Botón de Volver -->
+    <div class="back-link" onclick="redirectToOtroArchivo()">Volver</div>
+  </div>
+
+</body>
+</html>
